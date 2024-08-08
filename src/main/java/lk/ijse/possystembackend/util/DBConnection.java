@@ -1,11 +1,14 @@
 package lk.ijse.possystembackend.util;
 
+import lombok.Data;
+
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+@Data
 public class DBConnection {
     private static DBConnection instance;
     private DataSource dataSource;
