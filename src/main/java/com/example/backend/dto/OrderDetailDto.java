@@ -1,14 +1,14 @@
-package com.example.backend.entity;
+package com.example.backend.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-public class OrderDetails {
-    private String itemId;
+public class OrderDetailDto {
     private String orderId;
+    private String itemId;
     private int qty;
 }
