@@ -1,14 +1,14 @@
-package lk.ijse.possystembackend.dto;
+package com.example.backend.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
-public class OrderDetailDTO {
-    private String oId;
+public class OrderDetails {
+    private String orderId;
     private String itemId;
-    private String qty;
+    private int qty;
 }
